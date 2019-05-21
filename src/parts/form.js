@@ -71,7 +71,7 @@ function submitForm(elem) {
   function validPhone() {
       for (let i = 0; i < input.length; i++) {
           input[i].addEventListener('keypress', (e) => {
-              if (e[0].charCode == 48 && !e.charCode == 43 && e.charCode < 47 || e.charCode > 57) {
+              if (!e.charCode == 43 && e.charCode < 47 || e.charCode > 57) {
                   e.preventDefault();
               }
           });
